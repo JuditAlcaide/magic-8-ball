@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magic 8 Ball</title>
+    </head>
+    <body>
+        <header id="inicio">
+            <section class="principal">
+                <h1>¿Quieres saber que te depara el futuro?</h1>
+                <h2>Pregúntale a la Bola Mágica y... ¡obtén tus respuestas!</h2>
+            </section>
+            <section class="reglas">
+                <h3>Reglas</h3>
+                <ul>
+                    <li>Concentra toda tu energía en la pregunta que quieres realizar.</li>
+                    <li>La Bola Mágica solo responde a preguntas de si o no.</li>
+                    <li>Prepárate para conocer la verdad.</li>
+                </ul>
+            </section>
+            <section class="empezar">
+                <img src="https://i.postimg.cc/3wR8Rb3d/Magic-eight-ball.png" alt="Magic 8 Ball"/>
+                <p>Pulsa el botón cuando estés listo para continuar</p>
+                <button>Empezar</button>
+            </section>
+        </header>
+        <main class="container" style="display: none;">
+            <section class="respuestaC">
+                <div id="respuesta"></div>
+                <img src="https://i.postimg.cc/bYK4SV9s/magic-eight-ball-answer.png" alt="Magic 8 Ball"/>
+            </section>
+            <section class="preguntaC">
+                <p>Deja aquí tu pregunta:</p>
+                <input type="text" id="pregunta" placeholder="Escribir..." required/>
+                <button id="btnpregunta">Preguntar</button>
+            </section>
+        </main>
+    </body>
+</html>
