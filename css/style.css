@@ -8,7 +8,7 @@ body {
 
 h1, h2 {
     color: #360259;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px #9A18BA, 0 0 10px #9A18BA, 0 0 20px #9A18BA;
 }
 
 #inicio {
@@ -76,4 +76,104 @@ h1, h2 {
     box-shadow:  0 0 15px rgba(255, 0, 255, 0.6);
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
 
+.respuestaC {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.respuestaC img {
+    width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+#respuesta {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 25%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #2f6bc3;
+    border-radius: 10px;
+    border: 5px outset #FF33CC;
+    position: absolute;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.preguntaC {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 20px;
+}
+
+#btnpregunta {
+    background-color: #FF9966;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border: 2px solid #FF33CC;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnpregunta:hover {
+    background-color: #FF6699;
+    box-shadow:  0 0 15px rgba(255, 0, 255, 0.6);
+}
+
+#pregunta {
+    font-size: 16px;
+    padding: 15px 20px;
+    border: 2px solid #FF33CC;
+    border-radius: 10px;
+    background: #FF33CC;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+#pregunta:focus {
+    outline: none;
+    border-color: #FFCC00;
+    box-shadow: 0 0 8px #FF33CC;
+}
+
+#pregunta::placeholder {
+    color: #FFF;
+    font-style: italic;
+}
+
+.preguntaC p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF9966;
+    text-shadow: 0 0 5px #FF33CC, 0 0 10px #FF33CC, 0 0 20px #FF33CC;
+    margin-bottom: 10px;
+}
