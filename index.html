@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Haz tus preguntas a la Bola Mágica y obtén respuestas inmediatas. ¿Listo para descubrir tu destino?"/>
         <link href="./css/style.css" rel="stylesheet">
         <title>Magic 8 Ball</title>
     </head>
@@ -23,7 +24,7 @@
             <section class="empezarC">
                 <img src="https://i.postimg.cc/3wR8Rb3d/Magic-eight-ball.png" alt="Magic 8 Ball"/>
                 <p>Pulsa el botón cuando estés listo para continuar:</p>
-                <button id="empezar">Empezar</button>
+                <button id="empezar" aria-label="Comenzar el juego">Empezar</button>
             </section>
         </header>
         <main id="gameC" class="container" style="display: none;">
@@ -33,8 +34,8 @@
             </section>
             <section class="preguntaC">
                 <p>Deja aquí tu pregunta:</p>
-                <input type="text" id="pregunta" placeholder="Escribir..." required/>
-                <button id="btnpregunta">Preguntar</button>
+                <input type="text" id="pregunta" placeholder="Escribir..." maxlength="100" required/>
+                <button id="btnpregunta" aria-label="Botón para greguntar a la Bola Mágica">Preguntar</button>
             </section>
         </main>
         <script src="./js/script.js"></script>

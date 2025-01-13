@@ -11,6 +11,26 @@ h1, h2 {
     text-shadow: 0 0 5px #9A18BA, 0 0 10px #9A18BA, 0 0 20px #9A18BA;
 }
 
+button {
+    background-color: #FF9966;
+    color: #000000;
+    padding: 15px 25px;
+    margin: 10px;
+    border: 2px solid #FF33CC;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #FF6699;
+    box-shadow:  0 0 15px rgba(255, 0, 255, 0.6);
+}
+
 #inicio {
     display: flex;
     flex-direction: column;
@@ -19,12 +39,14 @@ h1, h2 {
 }
 
 .principal {
+    width: 100%;
+    max-width: 1200px;
     text-align: center;
     padding: 15px 20px;
     background: linear-gradient(45deg, #FF33CC, #FFCC00);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-
+    margin: 0 auto;
 }
 
 .reglas {
@@ -54,26 +76,6 @@ h1, h2 {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
     align-items: center;
     justify-content: center;
-}
-
-.empezarC button {
-    background-color: #FF9966;
-    color: white;
-    padding: 15px 25px;
-    margin: 10px;
-    border: 2px solid #FF33CC;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.empezarC button:hover {
-    background-color: #FF6699;
-    box-shadow:  0 0 15px rgba(255, 0, 255, 0.6);
 }
 
 .container {
@@ -127,33 +129,13 @@ h1, h2 {
     margin: 15px 20px;
 }
 
-#btnpregunta {
-    background-color: #FF9966;
-    color: white;
-    padding: 15px 25px;
-    margin: 10px;
-    border: 2px solid #FF33CC;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#btnpregunta:hover {
-    background-color: #FF6699;
-    box-shadow:  0 0 15px rgba(255, 0, 255, 0.6);
-}
-
 #pregunta {
     font-size: 16px;
     padding: 15px 20px;
     border: 2px solid #FF33CC;
     border-radius: 10px;
     background: #FF33CC;
-    color: white;
+    color: #000000;
     width: 100%;
     max-width: 400px;
     transition: all 0.3s ease;
@@ -166,14 +148,52 @@ h1, h2 {
 }
 
 #pregunta::placeholder {
-    color: #FFF;
+    color: #000000;
     font-style: italic;
 }
 
 .preguntaC p {
     font-size: 18px;
     font-weight: bold;
-    color: #FF9966;
+    color: #6A07AB;
     text-shadow: 0 0 5px #FF33CC, 0 0 10px #FF33CC, 0 0 20px #FF33CC;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .principal, .reglas {
+        width: 90%;
+        margin: 10px 10px;
+        font-size: 0.8rem;
+    }
+   
+    .respuestaC img {
+        width: 100%;
+    }
+
+    #respuesta {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    #pregunta {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .principal {
+        margin: 10px 15px;
+        font-size: 1rem;
+    }
 }
