@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(45deg, #B3E0FF, #80FFBF);
-    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(45deg, #B3E0FF,#A3D8FF, #80FFBF);
+    font-family: 'Press Start 2P', 'Roboto' , Verdana, Geneva, Tahoma, sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Press Start 2P', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Press Start 2P', 'Roboto' , Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -163,37 +163,71 @@ button:hover {
 @media only screen and (max-width: 768px) {
     body {
         padding: 10px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow-x: hidden;
     }
 
     .principal, .reglas {
-        width: 90%;
-        margin: 10px 10px;
-        font-size: 0.8rem;
+        max-width: 90%;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
     }
    
     .respuestaC img {
-        width: 100%;
+        width: 75%;
     }
 
     #respuesta {
         width: 70%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #pregunta {
         font-size: 1rem;
+        width: 75%;
     }
 
     button {
-        width: 100%;
+        width: 90%;
         font-size: 1rem;
         padding: 10px 15px;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .principal {
         margin: 10px 15px;
-        font-size: 1rem;
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.125rem;
+    }
+
+    #pregunta, #respuesta {
+        font-size: 1.125rem;
     }
 }
